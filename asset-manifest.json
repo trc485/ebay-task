@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ebay-task/static/css/main.5acb69ce.chunk.css",
+    "main.js": "/ebay-task/static/js/main.06273c32.chunk.js",
+    "main.js.map": "/ebay-task/static/js/main.06273c32.chunk.js.map",
+    "runtime-main.js": "/ebay-task/static/js/runtime-main.7b81172a.js",
+    "runtime-main.js.map": "/ebay-task/static/js/runtime-main.7b81172a.js.map",
+    "static/js/2.83d9b246.chunk.js": "/ebay-task/static/js/2.83d9b246.chunk.js",
+    "static/js/2.83d9b246.chunk.js.map": "/ebay-task/static/js/2.83d9b246.chunk.js.map",
+    "index.html": "/ebay-task/index.html",
+    "precache-manifest.817abbe1f547040827f6f46d29c82470.js": "/ebay-task/precache-manifest.817abbe1f547040827f6f46d29c82470.js",
+    "service-worker.js": "/ebay-task/service-worker.js",
+    "static/css/main.5acb69ce.chunk.css.map": "/ebay-task/static/css/main.5acb69ce.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b81172a.js",
+    "static/js/2.83d9b246.chunk.js",
+    "static/css/main.5acb69ce.chunk.css",
+    "static/js/main.06273c32.chunk.js"
+  ]
+}
