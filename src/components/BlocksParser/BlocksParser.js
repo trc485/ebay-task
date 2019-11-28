@@ -23,7 +23,7 @@ const BlocksParser = ({blocks = []}) => {
                             {...props}
                             key={`block-${v4()}`}
                         />
-                        );
+                    );
                 }
 
                 if (block.type === 'list') {
@@ -31,8 +31,6 @@ const BlocksParser = ({blocks = []}) => {
                         ...block.data,
                         type: block.data.style,
                     };
-
-                    console.log(props)
 
                     return (
                         <List

@@ -1,4 +1,4 @@
-export const aueligibleitem = {
+export default {
   country: "AU",
   name: "Eligible Item",
   time: 1556098174501,

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Layout, Button, BlocksParser } from './components';
-import { aueligibleitem } from './data';
+import data from './data';
 
 const App = () => {
     const [blocks = [], setBlocks] = useState([]);
@@ -14,7 +14,7 @@ const App = () => {
                     ? (
                         <Button
                             type="primary"
-                            onClick={() => setBlocks(aueligibleitem.blocks)}
+                            onClick={() => setBlocks(data.blocks)}
                             style={{
                                 display: 'block',
                                 margin: '2.4rem auto'
