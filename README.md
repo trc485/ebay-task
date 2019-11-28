@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# eBay Front End Developer Test
 
-## Available Scripts
+For this test we would like you to create a small React Application. The purpose of this application is to parse the attached ‘data.js’ file and render this on the page as HTML. The data is an object and within that object is a ‘blocks’ array of objects. Each object in this ‘blocks’ array has a ‘type’ parameter. For example, the first object:
 
-In the project directory, you can run:
+```
+{
+  type: 'header',
+  data: {
+    text: '20% off eligible items',
+  },
+},
+```
 
-### `yarn start`
+This has a type ‘header’ and a data object. This means this object should be rendered on the page as an h1 element and the text in this data object should be in this header. The second object:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+{
+ type: 'header',
+ data: {
+   text: 'Terms &amp; conditions',
+   level: 2,
+ },
+},
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This is also of type ‘header’ but in the data object it has ‘level’: 2. So this would render as an h2 element.
 
-### `yarn test`
+Therefore, for this test we would require there be some sort of trigger (button for example) on initial load that when pressed would parse this object and render it out onto the page. The finished page when rendered should look something like this: [https://pages.ebay.com.au/Buyer_coupons/psnooze/index_app.html](https://pages.ebay.com.au/Buyer_coupons/psnooze/index_app.html)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a live page on the eBay Website.
 
-### `yarn build`
+The purpose of this test is to show that you are able to parse data and also you have a basic understanding of how react works. Regarding the complexity of the solution we will leave that up to you. Please bear in mind whilst we always appreciate ‘clever’ solutions there is also a balance required to implement an efficient solution.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Please submit a link to a github repo with your solution once completed.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+We look forward to seeing your solutions!

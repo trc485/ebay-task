@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Layout, Button, BlocksParser } from './components';
+import { aueligibleitem } from './data';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [blocks = [], setBlocks] = useState([]);
+    return (
+        <Layout>
+            <BlocksParser
+                blocks={blocks}
+            />
+            {
+                blocks.length === 0
+                    ? (
+                        <Button
+                            type="primary"
+                            onClick={() => setBlocks(aueligibleitem.blocks)}
+                            style={{
+                                display: 'block',
+                                margin: '2.4rem auto'
+                            }}
+                        >
+                            Render HTML
+                        </Button>
+                    )
+                    : (
+                        <Button
+                            type="danger"
+                            style={{
+                                display: 'block',
+                                margin: '2.4rem auto'
+                            }}
+                            onClick={() => setBlocks([])}
+                        >
+                            Hide HTML
+                        </Button>
+                    )
+            }
+        </Layout>
+    );
+};
 
 export default App;
